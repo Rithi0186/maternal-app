@@ -1,73 +1,103 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# PregnaCare – Offline-First AI Maternal Health & Safety Companion
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+PregnaCare is an offline-first, AI-assisted maternal health application designed to support pregnant women—especially in rural and low-internet regions—with nutrition guidance, health tracking, reminders, and emergency support.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## 🧩 Problem Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Many pregnant women in rural areas lack:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* Continuous medical guidance
+* Nutrition awareness
+* Timely checkup reminders
+* Emergency support
+* Reliable internet access for digital health tools
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+This leads to preventable complications and poor maternal health outcomes.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+
+
+## 💡 Our Solution
+
+PregnaCare provides a simple, accessible, and intelligent mobile solution that works **without constant internet access** and offers:
+
+* AI-based pregnancy guidance
+* Nutrition tracking
+* Trimester-wise care tips
+* Medicine & checkup reminders
+* SOS emergency alert with location sharing
+* Multilingual & voice support
+* Community support space for mothers
+
+---
+
+## 🚀 Key Features
+
+* 🤖 AI Health Assistant for pregnancy-related doubts
+* 🥗 Nutrition planner tailored for each trimester
+* ⏰ Reminder system for tablets, scans, and checkups
+* 🆘 SOS alert system to family/guardians
+* 🌐 Offline functionality for rural usability
+* 🗣️ Voice and regional language support
+* 📊 Basic health report tracking
+
+## 🛠️ Tech Stack & Tools
+
+* **Frontend:** React
+* **Backend:** Firebase / Node.js
+* **Database:** Firebase Firestore / Local Storage
+* **AI Logic:** Rule-based health guidance engine
+* **APIs:** Geolocation API for SOS alerts
+
+
+## ⚙️ Technical Workflow
+
+1. User enters basic health and pregnancy details.
+2. Data is stored locally for offline access.
+3. AI rule engine analyzes inputs and provides trimester-specific guidance.
+4. Reminder module schedules alerts for medicines and checkups.
+5. In emergency, SOS module shares user location with saved contacts.
+6. Data can sync to cloud when internet is available.
+
+---
+
+## 🧪 Installation & Setup
+
+```bash
+git clone https://github.com/Rithi0186/maternal-app.git
+cd maternal-app
+npm install
+npm start
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+## 🎥 Demo Video and screenshots 
+
+https://drive.google.com/drive/folders/1tH1D5V_ydMeew75c6wTg3bTKGaE0yG0t
+
+---
+
+## 📈 Scalability & Real-World Impact
+
+PregnaCare can be integrated with:
+
+* Primary Health Centers (PHCs)
+* ASHA workers
+* Government maternal health schemes
+
+This enables large-scale deployment in rural communities to improve maternal care.
+
+---
+
+## ✨ Innovation
+
+Unlike typical health apps, PregnaCare is:
+
+* Designed specifically for **low-internet rural environments**
+* Focused on **maternal health only**
+* Combines **offline usability + AI guidance + emergency support**
+
